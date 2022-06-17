@@ -1,5 +1,5 @@
 const inquirer= require('inquirer');
-const fs = require('fs');
+const { writeFile, copyFile } = require('./utils/generate-site.js'); 
 
 // assign HTML template function in page-template.js to variable generate page
 const generatePage = require('./src/page-template.js');
